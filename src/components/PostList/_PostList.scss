@@ -1,0 +1,30 @@
+#post__lists{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    h2{
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+    }
+    .add--btn{
+        width: 50%;
+        font-size: 2.4rem;
+    }
+    .row{
+        justify-content: center;
+    }
+    .error__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            margin: 20px;
+            color: red;
+        }
+    }
+    
+}

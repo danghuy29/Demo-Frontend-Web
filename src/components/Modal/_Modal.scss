@@ -1,0 +1,44 @@
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(51,51,51,.301);
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+    &__body{
+        background-color: #fefefe;
+
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        border-radius: 25px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4{
+            font-size: 2.4rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            
+        }
+        .btn-group{
+            width: 80%;
+            .btn{
+                margin: 20px;
+    
+                font-size: 1.8rem;
+                font-weight: bold;
+                width: 40%;
+            }
+        }
+        
+    }
+}

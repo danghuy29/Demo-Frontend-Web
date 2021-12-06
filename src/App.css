@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.card-body {
+  display: block;
+  text-decoration: none; }
+  .card-body:hover {
+    text-decoration: none; }
+  .card-body .img-section img {
+    width: 100%; }
+  .card-body .title-section {
+    overflow: hidden; }
+    .card-body .title-section h4 {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .card-body .title-section input {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      font-weight: bold; }
+      .card-body .title-section input::placeholder {
+        font-size: 1.8rem;
+        font-weight: 500; }
+  .card-body .content-section p {
+    font-size: 1.8rem; }
+  .card-body .content-section textarea {
+    font-size: 1.8rem;
+    resize: none; }
+  .card-body .author-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .card-body .author-section p {
+      font-size: 1.4rem;
+      text-decoration: wavy; }
+  .card-body .btn {
+    font-size: 1.8rem; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#footer .jumbotron {
+  margin-bottom: 0px; }
+
+#post__lists {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; }
+  #post__lists h2 {
+    font-size: 3.2rem;
+    margin-bottom: 20px; }
+  #post__lists .add--btn {
+    width: 50%;
+    font-size: 2.4rem; }
+  #post__lists .row {
+    justify-content: center; }
+  #post__lists .error__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #post__lists .error__section h1 {
+      margin: 20px;
+      color: red; }
+
+#header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0; }
+  #header a {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff; }
+    #header a:hover {
+      color: yellow; }
+
+.modal {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
+  background: rgba(51, 51, 51, 0.301);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; }
+  .modal__body {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .modal__body h4 {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .modal__body .btn-group {
+      width: 80%; }
+      .modal__body .btn-group .btn {
+        margin: 20px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        width: 40%; }
 
-.App-link {
-  color: #61dafb;
-}
+.add-post {
+  margin-top: 60px; }
+  .add-post input {
+    font-size: 2.4rem;
+    font-weight: bold; }
+  .add-post label {
+    font-size: 2rem; }
+  .add-post textarea {
+    font-size: 1.8rem;
+    resize: none; }
+  .add-post .form-group {
+    margin: 20px auto; }
+  .add-post .custom-select {
+    font-size: 1.8rem; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

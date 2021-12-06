@@ -1,0 +1,16 @@
+#header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+   a{
+       font-size: 3rem;
+       text-transform: uppercase;
+       font-weight: bold;
+       color: #ffffff;
+       &:hover{
+           color: yellow;
+       }
+   }
+}

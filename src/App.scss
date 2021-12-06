@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+@import  "./components/PostItem/PostItem";
+@import "./components/Footer/Footer.scss";
+@import "./components/PostList/PostList.scss";
+@import "./components/Header/Header.scss";
+@import "./components/Modal/Modal.scss";
+@import "./components/AddPost/AddPost.scss"

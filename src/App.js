@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { useEffect } from 'react';
+import { fetchPost } from './Redux/Action/API/FetchPosts/FetchPostsAction';
+import { useDispatch } from 'react-redux';
+import { fetchUser } from './Redux/Action/API/FechtUser/FetchUserAction';
+import Routing from './Router/Routing';
+import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    if (localStorage.getItem("post") === null) {
+      dispatch(fetchPost())
+    }
+  }, [dispatch])
+  useEffect(() => {
+    if (localStorage.getItem("user") === null) {
+      dispatch(fetchUser())
+    }
+  }, [dispatch])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routing />
+      </Router>
     </div>
   );
 }

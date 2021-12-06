@@ -1,0 +1,55 @@
+.card-body{
+    display: block;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+
+    }
+        .img-section{
+            img{
+                width: 100%;
+            }
+        }
+        .title-section{
+            overflow: hidden;
+            // min-height: 136px;
+            h4{
+                font-size: 2.4rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                
+            }
+            input{
+                font-size: 2.4rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                &::placeholder{
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+            }
+        }
+        .content-section{
+            p{
+                font-size: 1.8rem;
+
+            }
+            textarea{
+                font-size: 1.8rem;
+                resize: none;
+            }
+        }
+        .author-section{
+            display: flex;
+            flex-direction: column;
+            align-items:  flex-end;
+            p{
+                font-size: 1.4rem;
+                text-decoration: wavy;
+            }
+        }
+        .btn{
+            font-size: 1.8rem;
+        }
+    
+}
